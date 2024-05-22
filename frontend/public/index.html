@@ -8,18 +8,21 @@
     body { font-family: Arial, sans-serif; }
     .container { width: 600px; margin: 0 auto; }
     form { margin-bottom: 20px; }
-    input[type="text"] { width: calc(100% - 22px); padding: 10px; margin-bottom: 10px; }
+    input[type="text"], input[type="number"] { width: calc(100% - 22px); padding: 10px; margin-bottom: 10px; }
     button { padding: 10px 20px; }
     ul { list-style-type: none; padding: 0; }
     li { padding: 10px 0; border-bottom: 1px solid #ddd; }
+    .info { margin-bottom: 5px; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>API Frontend</h1>
     <form id="addItemForm">
-      <input type="text" id="itemName" placeholder="Item name" required />
-      <button type="submit">Add</button>
+      <input type="text" id="itemName" placeholder="Nome do funcionário" required />
+      <input type="text" id="itemPosition" placeholder="Cargo" required />
+      <input type="text" id="itemDepartment" placeholder="Departamento" required />
+      <button type="submit">Adicionar</button>
     </form>
     <ul id="itemsList"></ul>
   </div>
